@@ -23,7 +23,7 @@ function viewCart() {
   if(cart.length === 0){
     console.log ("Your shopping cart is empty.");
   }
-  for(let i = 0; i < cart.length-1; i++){
+  for(let i = 0; i < cart.length; i++){
     if(i === cart.length-1){
       currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}.`
     }if(i === cart.length-2){
