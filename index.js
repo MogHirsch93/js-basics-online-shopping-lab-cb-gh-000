@@ -56,10 +56,9 @@ function removeFromCart(itemName) {
     if(!cart[i].hasOwnProperty(itemName)){
       console.log ("That item is not in your cart.");
     }else{
-      updatedCart = [...cart.slice(0, i), ...cart.slice(i+1)];
+    return  updatedCart = [...cart.slice(0, i), ...cart.slice(i+1)];
     }
   }
-  return updatedCart;
 }
 
 function placeOrder(cardNumber) {
