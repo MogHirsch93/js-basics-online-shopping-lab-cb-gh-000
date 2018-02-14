@@ -27,7 +27,7 @@ function viewCart() {
     if(i === cart.length-1){
       currentCart += ` and ${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}.`
     }else{
-      currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}`
+      currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}, `
     }
   }
   console.log(currentCart);
