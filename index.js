@@ -55,7 +55,7 @@ function removeFromCart(itemName) {
     if(cart.hasOwnProperty(itemName)){
       delete cart.itemName;
     }else{
-      
+      return "that item is not in your cart."
     }
   }
 }
