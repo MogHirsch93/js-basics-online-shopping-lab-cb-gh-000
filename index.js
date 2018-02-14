@@ -51,7 +51,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  for(let i = 0; i < cart.length; i++){
+    if(cart[i] === cart[i+1]){
+      return 
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
