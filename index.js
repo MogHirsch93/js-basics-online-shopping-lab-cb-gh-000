@@ -28,6 +28,8 @@ function viewCart() {
       currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}.`
     }else if(i === cart.length-2){
       currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]} and `
+    }else if(i === cart.length-3){
+      currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}`
     }else{
       currentCart += `${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}, `
     }
