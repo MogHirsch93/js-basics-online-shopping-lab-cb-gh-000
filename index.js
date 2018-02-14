@@ -50,10 +50,10 @@ function total() {
   return cart.reduce(sumArray, 0);
 }
 
-function removeFromCart(item) {
+function removeFromCart(itemName) {
   for(let i = 0; i < cart.length; i++){
-    if(cart[i] === cart[i+1]){
-      return 
+    if(){
+      return "That item is not in your cart"
     }
   }
 }
