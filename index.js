@@ -57,6 +57,7 @@ function removeFromCart(itemName) {
       updatedCart = [...cart.slice(0, i), ...cart.slice(i+1)];
     }else{
       console.log ("That item is not in your cart.");
+      return cart;
     }
   }
   return updatedCart;
