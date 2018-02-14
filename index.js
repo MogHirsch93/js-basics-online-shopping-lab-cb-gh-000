@@ -59,6 +59,7 @@ function removeFromCart(itemName) {
       console.log ("That item is not in your cart.");
     }
   }
+  return updatedCart;
 }
 
 function placeOrder(cardNumber) {
